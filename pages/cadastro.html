@@ -26,7 +26,77 @@
   </header>
 
   <main>
-    
+         <section aria-labelledby="t-cad">
+      <h2 id="t-cad">Cadastrar livro</h2>
+      <p>Preencha os dados manualmente ou use a busca para completar autor, capa e ano. O mesmo formulário será usado para editar um livro.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados do livro</legend>
+          <p>
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" required maxlength="120">
+            <button type="button">Buscar dados na Open Library</button>
+          </p>
+          <p>
+            <label for="autor">Autor</label>
+            <input type="text" id="autor" name="autor" required maxlength="80">
+          </p>
+          <p>
+            <label for="ano">Ano de publicação</label>
+            <input type="number" id="ano" name="ano" min="1000" max="2026" placeholder="Ex.: 1899">
+          </p>
+          <p>
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecione</option>
+              <option value="romance">Romance</option>
+              <option value="fantasia">Fantasia</option>
+              <option value="ficcao-cientifica">Ficção científica</option>
+              <option value="biografia">Biografia</option>
+              <option value="nao-ficcao">Não ficção</option>
+              <option value="outro">Outro</option>
+            </select>
+          </p>
+          <p>
+            <label for="capa">Endereço da capa</label>
+            <input type="url" id="capa" name="capa" placeholder="https://...">
+          </p>
+          <p>
+            <label for="previa">Link de pré-visualização</label>
+            <input type="url" id="previa" name="previa" placeholder="https://...">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Minha leitura</legend>
+          <p>Status de leitura</p>
+          <p>
+            <input type="radio" id="s-quero" name="status" value="quero-ler" checked>
+            <label for="s-quero">Quero ler</label>
+            <input type="radio" id="s-lendo" name="status" value="lendo">
+            <label for="s-lendo">Lendo</label>
+            <input type="radio" id="s-lido" name="status" value="lido">
+            <label for="s-lido">Lido</label>
+          </p>
+          <p>
+            <label for="nota">Nota (0 a 5)</label>
+            <input type="number" id="nota" name="nota" min="0" max="5" step="0.5">
+          </p>
+          <p>
+            <label for="conclusao">Data de conclusão</label>
+            <input type="date" id="conclusao" name="conclusao">
+          </p>
+          <p>
+            <label for="resenha">Resenha</label>
+            <textarea id="resenha" name="resenha" rows="5" maxlength="500" placeholder="O que você achou do livro?"></textarea>
+          </p>
+        </fieldset>
+
+        <button type="submit">Salvar livro</button>
+        <button type="reset">Limpar</button>
+        <a href="../index.html">Cancelar</a>
+      </form>
+    </section>
   </main>
 
   <footer>
