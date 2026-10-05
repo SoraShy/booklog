@@ -26,7 +26,57 @@
   </header>
 
   <main>
-    
+            <section aria-labelledby="t-desc">
+      <h2 id="t-desc">Descobrir livros</h2>
+      <form action="#" method="get">
+        <p>
+          <label for="q">Pesquisar no catálogo</label>
+          <input type="search" id="q" name="q" placeholder="Título, autor ou assunto">
+        </p>
+        <p>
+          <label for="tipo">Buscar por</label>
+          <select id="tipo" name="tipo">
+            <option value="titulo">Título</option>
+            <option value="autor">Autor</option>
+            <option value="assunto">Assunto</option>
+          </select>
+        </p>
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="t-resultados">
+      <h2 id="t-resultados">Resultados</h2>
+      <ul>
+        <li>
+          <article>
+            <img src="../assets/img/capa-exemplo.svg" alt="Capa de Duna" width="80" height="120">
+            <h3>Duna</h3>
+            <p>Frank Herbert &ndash; 1965</p>
+            <a href="#" target="_blank" rel="noopener">Pré-visualizar</a>
+            <button type="button">Adicionar à estante</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/capa-exemplo.svg" alt="Capa de O Pequeno Príncipe" width="80" height="120">
+            <h3>O Pequeno Príncipe</h3>
+            <p>Antoine de Saint-Exupéry &ndash; 1943</p>
+            <a href="#" target="_blank" rel="noopener">Pré-visualizar</a>
+            <button type="button">Adicionar à estante</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <img src="../assets/img/capa-exemplo.svg" alt="Capa de Frankenstein" width="80" height="120">
+            <h3>Frankenstein</h3>
+            <p>Mary Shelley &ndash; 1818</p>
+            <a href="#" target="_blank" rel="noopener">Pré-visualizar</a>
+            <button type="button">Adicionar à estante</button>
+          </article>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer>
