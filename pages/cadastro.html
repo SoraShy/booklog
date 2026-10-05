@@ -16,9 +16,9 @@
     </div>
     <nav aria-label="Navegação principal">
       <ul>
-        <li><a href="../index.html"aria-current="page">Minha estante</a></li>
+        <li><a href="../index.html">Minha estante</a></li>
         <li><a href="descobrir.html">Descobrir</a></li>
-        <li><a href="cadastro.html">Cadastrar livro</a></li>
+        <li><a href="cadastro.html" aria-current="page">Cadastrar livro</a></li>
         <li><a href="perfil.html">Perfil</a></li>
         <li><a href="login.html">Sair</a></li>
       </ul>
@@ -26,7 +26,7 @@
   </header>
 
   <main>
-         <section aria-labelledby="t-cad">
+    <section aria-labelledby="t-cad">
       <h2 id="t-cad">Cadastrar livro</h2>
       <p>Preencha os dados manualmente ou use a busca para completar autor, capa e ano. O mesmo formulário será usado para editar um livro.</p>
       <form action="#" method="post">
@@ -47,15 +47,7 @@
           </p>
           <p>
             <label for="categoria">Categoria</label>
-            <select id="categoria" name="categoria" required>
-              <option value="">Selecione</option>
-              <option value="romance">Romance</option>
-              <option value="fantasia">Fantasia</option>
-              <option value="ficcao-cientifica">Ficção científica</option>
-              <option value="biografia">Biografia</option>
-              <option value="nao-ficcao">Não ficção</option>
-              <option value="outro">Outro</option>
-            </select>
+            <select id="categoria" name="categoria" required><option value="">Selecione</option><option value="romance">Romance</option><option value="fantasia">Fantasia</option><option value="ficção-científica">Ficção científica</option><option value="biografia">Biografia</option><option value="não-ficção">Não ficção</option><option value="outro">Outro</option></select>
           </p>
           <p>
             <label for="capa">Endereço da capa</label>
