@@ -26,7 +26,47 @@
   </header>
 
   <main>
-    
+          <section aria-labelledby="t-busca">
+      <h2 id="t-busca">Pesquisar, filtrar e ordenar</h2>
+      <form action="#" method="get">
+        <p>
+          <label for="busca">Pesquisar por título ou autor</label>
+          <input type="search" id="busca" name="busca" placeholder="Ex.: Machado de Assis">
+        </p>
+        <p>
+          <label for="f-status">Status de leitura</label>
+          <select id="f-status" name="status">
+            <option value="">Todos</option>
+            <option value="quero-ler">Quero ler</option>
+            <option value="lendo">Lendo</option>
+            <option value="lido">Lido</option>
+          </select>
+        </p>
+        <p>
+          <label for="f-cat">Categoria</label>
+          <select id="f-cat" name="categoria">
+            <option value="">Todas</option>
+            <option value="romance">Romance</option>
+            <option value="fantasia">Fantasia</option>
+            <option value="ficcao-cientifica">Ficção científica</option>
+            <option value="biografia">Biografia</option>
+            <option value="nao-ficcao">Não ficção</option>
+            <option value="outro">Outro</option>
+          </select>
+        </p>
+        <p>
+          <label for="ordem">Ordenar por</label>
+          <select id="ordem" name="ordem">
+            <option value="titulo">Título (A–Z)</option>
+            <option value="autor">Autor (A–Z)</option>
+            <option value="nota">Maior nota</option>
+            <option value="conclusao">Leitura concluída mais recente</option>
+          </select>
+        </p>
+        <button type="submit">Aplicar</button>
+        <button type="reset">Limpar</button>
+      </form>
+    </section>
   </main>
 
   <footer>
