@@ -405,3 +405,42 @@ ol { padding-left: 1.5rem; }
   dl { grid-template-columns: 1fr; }
   dd { margin-bottom: 0.5rem; }
 }
+
+/* Estados de interação e mensagens */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 3px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+input:hover, select:hover, textarea:hover { border-color: #8b7bc0; }
+
+.mensagem {
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #2a2145;
+  border-left: 5px solid #c4b5fd;
+  border-radius: 0.5rem;
+}
+
+.sucesso { border-left-color: #4ade80; }
+.erro { border-left-color: #f87171; }
+
+.vazio {
+  border-left-color: #c4bad9;
+  text-align: center;
+}
+
+dialog {
+  width: 90%;
+  max-width: 28rem;
+  margin: auto;
+  padding: 1.5rem;
+  color: #f3f0fa;
+  background-color: #1e1830;
+  border: 1px solid #3b2f5c;
+  border-radius: 0.75rem;
+}
+
+dialog::backdrop { background-color: rgba(10, 8, 18, 0.8); }
+
+dialog button { margin-right: 0.5rem; }
