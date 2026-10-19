@@ -1,4 +1,3 @@
-/* Identidade visual */
 * {
   margin: 0;
   padding: 0;
@@ -35,3 +34,63 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+body > header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #1e1830;
+  border-bottom: 3px solid #7c3aed;
+}
+
+body > header img {
+  width: 3rem;
+  height: 3rem;
+}
+
+body > header div { flex: 1; }
+body > header h1 { margin-bottom: 0; }
+
+body > header p {
+  margin-bottom: 0;
+  color: #c4bad9;
+  font-size: 0.9rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #f3f0fa;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover { background-color: #2f2650; }
+
+nav a[aria-current="page"] {
+  background-color: #7c3aed;
+  color: #ffffff;
+  border-bottom-color: #34d399;
+}
+
+body > footer {
+  padding: 1.5rem 2rem;
+  background-color: #1e1830;
+  border-top: 1px solid #3b2f5c;
+  color: #c4bad9;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+body > footer p { margin-bottom: 0.25rem; }
+
