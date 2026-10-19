@@ -94,3 +94,101 @@ body > footer {
 
 body > footer p { margin-bottom: 0.25rem; }
 
+/* Formulários e botões */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+form p {
+  flex: 1 1 12rem;
+  margin-bottom: 0;
+}
+
+fieldset {
+  flex: 1 1 20rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #3b2f5c;
+  border-radius: 0.5rem;
+}
+
+fieldset p { margin-bottom: 1rem; }
+
+legend {
+  padding: 0 0.5rem;
+  color: #6ee7b7;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #f3f0fa;
+  background-color: #130f1f;
+  border: 1px solid #3b2f5c;
+  border-radius: 0.5rem;
+}
+
+textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.35rem;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label {
+  display: inline;
+  margin-right: 1rem;
+  font-weight: normal;
+}
+
+form > a { padding: 0.6rem 0.5rem; }
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #f3f0fa;
+  background-color: #2f2650;
+  border: 1px solid #5b4a8c;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover { background-color: #3d3166; }
+
+button[type="submit"] {
+  background-color: #22c55e;
+  border-color: #22c55e;
+  color: #0f0a1f;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover { background-color: #4ade80; }
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.perigo {
+  background-color: #dc2626;
+  border-color: #dc2626;
+  color: #ffffff;
+}
+
+.perigo:hover { background-color: #b91c1c; }
