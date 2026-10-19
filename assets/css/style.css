@@ -369,3 +369,39 @@ ol { padding-left: 1.5rem; }
 }
 
 .caixa-login form p { flex: none; }
+
+/* Responsividade */
+@media (max-width: 900px) {
+  main > aside { flex: 1 1 100%; }
+}
+
+@media (max-width: 600px) {
+  body > header { padding: 1rem; }
+  body > header nav { flex: 1 1 100%; }
+
+  main {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  main > section, main > article, main > aside { padding: 1rem; }
+
+  main > article { grid-template-columns: 1fr; }
+
+  main > article > header, main > article > footer, main > article > section { grid-column: auto; }
+  main > article figure { grid-row: auto; }
+
+  th, td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .tabela-livros th:nth-child(1), .tabela-livros td:nth-child(1),
+  .tabela-livros th:nth-child(3), .tabela-livros td:nth-child(3),
+  .tabela-livros th:nth-child(4), .tabela-livros td:nth-child(4) {
+    display: none;
+  }
+
+  dl { grid-template-columns: 1fr; }
+  dd { margin-bottom: 0.5rem; }
+}
